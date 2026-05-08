@@ -23,7 +23,7 @@ public class PirataServiceImpl implements PirataService {
 
     @Override
     public List<Pirata> findAll() {
-        return List.of();
+        return pirataRepository.findAll();
     }
 
     @Override

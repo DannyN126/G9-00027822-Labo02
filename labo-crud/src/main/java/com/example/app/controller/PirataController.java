@@ -31,7 +31,7 @@ public class PirataController {
     @GetMapping("/list")
     public ResponseEntity<List<Pirata>> getAllProducts() {
         var list = service.findAll();
-        return ResponseEntity.status(HttpStatus.CREATED).body(list);
+        return ResponseEntity.ok(list);
     }
 
     @GetMapping("/find/{id}")
