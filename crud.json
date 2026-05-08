@@ -1,0 +1,175 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_18b98979722b422a81e20462163ddd74
+  created: 1778195512476
+  modified: 1778195512476
+  description: ""
+collection:
+  - url: http://localhost:4000/api/pirata/list
+    name: get list
+    meta:
+      id: req_78a82ea9f27d491fa13d74121d46f490
+      created: 1778195512589
+      modified: 1778198455242
+      isPrivate: false
+      description: ""
+      sortKey: -1778197644434.75
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "name": "DannyElPirata",
+         "bounty": 3000.0,
+        	"crew": 5.0,
+        	"isActive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/create
+    name: create
+    meta:
+      id: req_51f8fef18ee540ae98502f4acb8d32f1
+      created: 1778198355050
+      modified: 1778198427428
+      isPrivate: false
+      description: ""
+      sortKey: -1778198355050
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "name": "NuevoPirata",
+         "bounty": 30444.0,
+        	"crew": 5.0,
+        	"isActive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/find/ecbd7865-0041-4f49-9c04-7d2098ea9ba2
+    name: "find by id "
+    meta:
+      id: req_706d18000fd047a39b8159926e617360
+      created: 1778198429644
+      modified: 1778198478574
+      isPrivate: false
+      description: ""
+      sortKey: -1778196933819.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/delete/d9b11c44-0894-4c9c-bfab-083ee2fa06dc
+    name: delete by id
+    meta:
+      id: req_dbb6b71ee4884a59920ac81e3317cd59
+      created: 1778198504501
+      modified: 1778198610860
+      isPrivate: false
+      description: ""
+      sortKey: -1778198504501
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:4000/api/pirata/update/ecbd7865-0041-4f49-9c04-7d2098ea9ba2
+    name: "update by id "
+    meta:
+      id: req_d72f4472cb7e412e99efd896325b7c6e
+      created: 1778198574647
+      modified: 1778199002507
+      isPrivate: false
+      description: ""
+      sortKey: -1778198574647
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "NuevoPirataModificado",
+        		"bounty": 30444.0,
+        		"crew": 5.0,
+        		"isActive": true
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.5.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_4689419710e70754fa91e748f49257dc185ed0da
+    created: 1778195512481
+    modified: 1778195512481
+environments:
+  name: Base Environment
+  meta:
+    id: env_4689419710e70754fa91e748f49257dc185ed0da
+    created: 1778195512480
+    modified: 1778195512480
+    isPrivate: false
